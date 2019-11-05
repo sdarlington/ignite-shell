@@ -13,7 +13,9 @@ network connection or submit a complex job. In short: not recommended for any pr
 
 ## Options
 
-* `-c (true|false|1|0)`. ignite-shell defaults to connecting to the cluster in client mode. 
+* `-c (client|thin|server)`. ignite-shell defaults to connecting to the cluster in client mode.
+* `-s [connection string]`. If you use the thin-client, this is the hostname and port. Defaults to 127.0.0.1 and the
+default port number 
 * `config.xml`. If you don't specific a config file, ignite-shell will try to connect to localhost and enable
 peer-class loading. 
 
@@ -30,5 +32,5 @@ an `ignite-shell.sh` script in the bin directory.
 
 ## The future
 
-- [ ] Thin client access
+- [x] Thin client access
 - [ ] Make it easier to switch between Ignite/GridGain versions
